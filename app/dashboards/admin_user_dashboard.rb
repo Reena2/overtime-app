@@ -5,7 +5,6 @@ class AdminUserDashboard < Administrate::BaseDashboard
     posts: Field::HasMany.with_options(searchable: false),
     id: Field::Number.with_options(searchable: false),
     email: Field::String.with_options(searchable: true),
-    password: Field::String.with_options(searchable: false),
     sign_in_count: Field::Number.with_options(searchable: false),
     current_sign_in_at: Field::DateTime.with_options(searchable: false),
     last_sign_in_at: Field::DateTime.with_options(searchable: false),
@@ -42,7 +41,6 @@ class AdminUserDashboard < Administrate::BaseDashboard
   
   FORM_ATTRIBUTES = [
     :email,
-    :password,
     :first_name,
     :last_name,
     :type,
