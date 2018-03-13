@@ -1,4 +1,4 @@
-FactoryBot.define do
+ FactoryBot.define do
 	factory :post do
 		date Date.today
 		rationale "Some Rationale"
