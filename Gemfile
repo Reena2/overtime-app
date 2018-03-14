@@ -42,3 +42,4 @@ gem 'bourbon', '~> 5.0'
 gem 'pundit', '~> 1.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'twilio-ruby', '~> 5.7.1'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', :groups => [:development, :test]
