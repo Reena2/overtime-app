@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "gritter";
 @import "bourbon";
+@import "font-awesome";
 
 .custom-nav {
   margin-top: 15px;
@@ -9,4 +10,14 @@
 
 .logo {
   margin-top: 15px;
+}
+
+.index-icons:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.index-icons-tresh:hover {
+	text-decoration: none;
+	color: red;
 }
