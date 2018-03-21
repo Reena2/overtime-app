@@ -6,9 +6,9 @@ module SmsTool
 
   def self.send_sms(number:, message:)
     @client.api.account.messages.create(
-      from: '+14159341234',
-      to: '+16105557069',
-      body: 'Hey there!'
+      from: ENV['TWILIO_PHONE_NUMBER'],
+      to: "1#{number}",
+      body: "#{message}"
     )
 
     puts "Sending SMS..."
