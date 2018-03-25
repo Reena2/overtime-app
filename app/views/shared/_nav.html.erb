@@ -5,21 +5,20 @@
 <% if user_signed_in? %>
   <ul class="nav nav-tabs mr-auto custom-nav">
     <li class="nav-item">
-      <%= link_to 'Home', root_path, class: "nav-link #{active? root_path}" %>
+      <%= link_to '', root_path, class: "nav-link #{active? root_path} fa fa-home fa-lg" %>
     </li>
     <li class="nav-item">
-      <%= link_to 'Time Entries', posts_path, class: "nav-link #{active? posts_path}" %>
+      <%= link_to 'Entries', posts_path, class: "nav-link #{active? posts_path}" %>
     </li>
 
-    <!-- TODO: possibly refactor -->
     <%= render 'shared/audit_log_tab' if policy(AuditLog).index? %>
 
     <li class="nav-item">
-      <%= link_to 'Request Overtime', new_post_path, id: 'new_post_from_nav', class: "nav-link #{active? new_post_path}" %>
+      <%= link_to 'Request OT', new_post_path, id: 'new_post_from_nav', class: "nav-link #{active? new_post_path}" %>
     </li>
 
       <li class="nav-item dropdown ml-auto">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Options</a>
+        <a class="nav-link  fa fa-cog fa-lg" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
           <div class="dropdown-menu">
 
             <!-- TODO -->
