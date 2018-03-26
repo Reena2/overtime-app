@@ -21,5 +21,5 @@ Rails.application.routes.draw do
   end
 
   devise_for :users, skip: [:registrations]
-	root to: 'static#homepage'
+  root to: 'static#homepage'
 end
