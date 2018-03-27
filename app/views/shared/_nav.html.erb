@@ -4,10 +4,10 @@
 
 <% if user_signed_in? %>
   <ul class="nav nav-tabs mr-auto custom-nav">
-    <li class="nav-item">
-      <%= link_to '', root_path, class: "nav-link #{active? root_path} fa fa-home fa-lg" %>
+    <li class="nav-item nav-link #{active? root_path}">
+      <%= link_to '', root_path, class: "fa fa-home fa-lg" %>
     </li>
-    
+
     <%= render 'shared/employee_nav_items' if employee? %>
 
     <%= render 'shared/audit_log_tab' if admin? %>
@@ -17,7 +17,7 @@
         <div class="dropdown-menu">
 
           <%= render 'shared/admin_dropdown' if admin? %>
-          
+
           <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
         </div>
     </li>

@@ -1,18 +1,20 @@
-<div class="container">
-  <h2>Items Pending Your Approval</h2>
+
+<h2>Items Pending Your Approval</h2>
   <hr>
-  <div class="pending-homepage row">
+  <div class="card-columns">
     <%= render partial: 'pending_approval', locals: { pending_approvals: @pending_approvals } %>
   </div>
 
   <h2>Confirmation Log</h2>
   <hr>
-  <div class="pending-homepage row">
+
+  <div class="card-deck">
     <%= render partial: 'confirmation_log', locals: { recent_audit_items: @recent_audit_items } %>
   </div>
-  
+
   <div>
     <%= link_to 'View All Items', audit_logs_path, class: 'btn btn-primary' %>
   </div>
   <hr>
-</div>
+
+
