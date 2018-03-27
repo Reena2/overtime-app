@@ -1,18 +1,18 @@
-@employee = Employee.create!(email: "test3@test.com",
+@employee = Employee.create!(email: "test@test.com",
              password: "123123",
              password_confirmation: "123123",
              first_name: "Jon",
              last_name: "Snow",
-             phone: "0992889884")
+             phone: "5555555555")
 
 puts "Employee have been created"
 
-AdminUser.create!(email: "test@test.com",
+AdminUser.create!(email: "admin@test.com",
              password: "123123",
              password_confirmation: "123123",
              first_name: "Admin",
-             last_name: "employee",
-             phone: "4064123849")
+             last_name: "User",
+             phone: "5555555555")
 
 puts "Admin user have been created"
 
